@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Roboto)">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+   <main id="parentcontainer">
+    <div class="container">
+      <div class="left">
+        <div class="left-container">
+          <h1>  
+            Stay updated!
+          </h1>
+          <div class="product">
+            <p>
+              Join 60,000+ product managers
+              receiving monthly updates on:
+            </p>
+          </div>
+  
+          <div class="content">
+            <div class="muchmore">
+              <div class="tick_icon">
+                <img src="./assets/images/icon-list.svg" alt="">
+              </div>
+              <div class="p1">
+                <p>
+                  Product discovery and building what matters
+                </p>
+              </div>
+            </div>
+    
+            <div class="measuring">
+              <div class="tick_icon">
+                <img src="./assets/images/icon-list.svg" alt="">
+              </div>
+              <div class="p2">
+                <p>
+                  Measuring to ensure updates are a success
+                </p>
+              </div>
+            </div>
+    
+            <div class="more">
+              <div class="tick_icon">
+                <img src="./assets/images/icon-list.svg" alt="">
+              </div>
+              <div class="p3">
+                <p>
+                  And much more!
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <form action="submit.php" method="get" onsubmit="return validateForm(this)">
+            <!-- <div id='message'></div> -->
+            <label for="email" id="email">Email address</label><br>
+            <input type="email" placeholder="email@company.com" 
+            id="email">
+            
+            <div class="btn">
+              <button id="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+      <div class="right">
+        <!-- <div class="right_image">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+        </div> -->
+      </div>
+    </div>
+   </main>
+
+    <!-- Sign-up form end -->
+    
+    <!-- Success message start -->
+    <section id="parentcontainer">
+      <div class="container2">
+        <div class="success">
+          <div class="tick">
+            <img src="./assets/images/icon-success.svg" alt="">
+          </div>
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to ash@loremcompany.com. 
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+    
+          <div class="btn">
+            <button id="submit"> Dismiss message </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <!-- Success message end -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+<script src="script.js"></script>
+
+</body>
+</html>
